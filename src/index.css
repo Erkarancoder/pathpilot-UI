@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #090817;
+  --color-bg-sidebar: #080611;
+  --color-bg-panel: #171536;
+  --color-bg-card: #211C50;
+  --color-neon-pink: #F02BC8;
+  --color-violet-accent: #9255FF;
+  --color-text-main: #F7F3FF;
+  --color-text-secondary: #A7A0C5;
+  --color-border-subtle: rgba(146, 85, 255, 0.16);
+  --color-border-pink: rgba(240, 43, 200, 0.35);
+}
+
+:root {
+  --bg-main: #090817;
+  --bg-sidebar: #080611;
+  --bg-panel: #171536;
+  --bg-card: #211C50;
+  --primary-pink: #F02BC8;
+  --violet-accent: #9255FF;
+  --text-main: #F7F3FF;
+  --text-secondary: #A7A0C5;
+
+  --border-subtle: rgba(146, 85, 255, 0.16);
+  --border-card: rgba(146, 85, 255, 0.2);
+  --border-pink: rgba(240, 43, 200, 0.35);
+  --border-violet: rgba(146, 85, 255, 0.45);
+
+  --glow-pink: 0 0 24px rgba(240, 43, 200, 0.32);
+  --glow-pink-sm: 0 0 12px rgba(240, 43, 200, 0.28);
+  --glow-violet: 0 0 24px rgba(146, 85, 255, 0.3);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.55);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080611;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #211C50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9255FF;
+}
+
+/* Gradients */
+.gradient-pink {
+  background: linear-gradient(135deg, #F02BC8 0%, #D813B8 100%);
+}
+
+.gradient-pink-hover:hover {
+  background: linear-gradient(135deg, #FF3BBF 0%, #E617C4 100%);
+}
+
+.gradient-violet {
+  background: linear-gradient(135deg, #9255FF 0%, #6E2FF2 100%);
+}
+
+.gradient-brand {
+  background: linear-gradient(135deg, #F02BC8 0%, #9255FF 100%);
+}
+
+.gradient-brand-subtle {
+  background: linear-gradient(135deg, rgba(240, 43, 200, 0.12) 0%, rgba(146, 85, 255, 0.12) 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(180deg, #211C50 0%, #171536 100%);
+}
+
+.gradient-panel {
+  background: linear-gradient(180deg, rgba(23, 21, 54, 0.95) 0%, rgba(13, 11, 28, 0.98) 100%);
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, #F02BC8 0%, #D477FF 50%, #9255FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(135deg, #FF6BE6 0%, #F02BC8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-pink-effect {
+  box-shadow: 0 0 20px rgba(240, 43, 200, 0.35);
+}
+
+.glow-violet-effect {
+  box-shadow: 0 0 20px rgba(146, 85, 255, 0.3);
+}
+
+.subtle-border {
+  border: 1px solid rgba(146, 85, 255, 0.16);
+}
